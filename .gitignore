@@ -1,0 +1,9 @@
+kaggle/
+data/
+testing_data/
+__pycache__/
+env/
+*.csv
+*.tar.gz
+*.json
+*.log
