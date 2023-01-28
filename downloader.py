@@ -93,22 +93,9 @@ def save_everything(result, path):
             )
             df = df.iloc[:500]
             df.to_csv(filename, index=False)
+
         except Exception as e:
-            try:
-                df = pd.read_csv(
-                    filename,
-                    encoding_errors="ignore",
-                    nrows=500,
-                    engine="python",
-                    encoding_errors="ignore",
-                    on_bad_lines="skip",
-                    quotechar='"',
-                    sep=",",
-                )
-                df = df.iloc[:500]
-                df.to_csv(filename, index=False)
-            except Exception as e:
-                logging.info(f"Error {e}")
+            logging.info(f"Error {e}")
 
     # write to tablename_URLtotable.txt
     with open(f"{table_name}_URLtotable.txt", "w") as f:
