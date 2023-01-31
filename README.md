@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kaggle-Scraper Readme</title>
   </head>
   <body>
     <h1>Kaggle-Scraper</h1>
